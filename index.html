@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowUp - Login</title>
+    <link rel="stylesheet" href="css/stylesLogin.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <h1 class="title">ShowUp</h1>
+        <h1 class="desc">Your Talent App!</h1>
+        <button class="toggle-btn" onclick="toggleMode()">Mode</button>
+    </header>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-btn">Entrar</button>
+        </form>
+        <p class="register-link">Não tem conta? <a href="#" class="cadastro">Cadastre-se</a></p>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="js/toggle.js"></script>
+</body>
+</html>

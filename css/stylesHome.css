@@ -1,0 +1,259 @@
+body {
+    font-family: monospace;
+    background: linear-gradient(135deg, #6a11cb, #dbb5ff);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 220vh;
+    color: #fff;
+    transition: back;
+}
+
+/* loginpage*/
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 7px 25px #213251;
+}
+
+header.dark-mode {
+    background-color: #aa7cdc;
+    color: #fff;
+    box-shadow: 0 7px 25px #a034d2;
+}
+
+.toggle-btn {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.toggle-btn.dark-mode:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, #aa7cdc, #4007c5);
+    color: #000;
+}
+
+.cadastro{
+    color: #fff;
+}
+
+.login-container {
+    background: radial-gradient(rgba(119, 86, 142, 0.8), rgba(62, 45, 97, 0.8));
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+body.dark-mode .login-container {
+    background: radial-gradient(rgba(252, 186, 255, 0.8), rgba(255, 255, 255, 0.8));
+    color: #000;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid #a225fc;
+}
+
+.desc {
+    font-size: 20px;
+
+}
+
+.login-btn {
+    background-color: #2575fc;
+    color: #fff;
+    padding: 0.7rem 1.3rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px #850c95;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #6a11cb;
+    box-shadow: 0 2px 4px #850c95;
+}
+
+.register-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.register-link a {
+    color: #7fd9ff;
+    text-decoration: none;
+}
+
+.register-link.darkmode a {
+    color: #2938ff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* homepage */
+.homepage-container {
+    background: radial-gradient(rgba(119, 86, 142, 0.8), rgba(62, 45, 97, 0.8));
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 0.1rem;
+    color: #fff;
+}
+
+body.dark-mode .homepage-container {
+    background: radial-gradient(rgba(252, 186, 255, 0.8), rgba(255, 255, 255, 0.8));
+    color: #000;
+}
+
+.welcome-text {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+}
+
+.explore-btn, .profile-btn {
+    background-color: #2575fc;
+    color: #fff;
+    padding: 0.7rem 1.3rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px #850c95;
+    transition: background-color 0.3s;
+    margin: 0.5rem;
+}
+
+.explore-btn:hover, .profile-btn:hover {
+    background-color: #6a11cb;
+    box-shadow: 0 2px 4px #850c95;
+}
+
+/* Tweets Container */
+.tweets-container {
+    background: radial-gradient(rgba(119, 86, 142, 0.8), rgba(62, 45, 97, 0.8));
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    margin: 2rem auto;
+    color: #fff;
+}
+
+body.dark-mode .tweets-container {
+    background: radial-gradient(rgba(252, 186, 255, 0.8), rgba(255, 255, 255, 0.8));
+    color: #000;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tweet {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .tweet {
+    background: rgba(255, 255, 255, 0.1);
+    color: #000;
+}
+
+#new-tweet {
+    width: 95%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+}
+
+#new-tweet:focus {
+    outline: none;
+    border: 2px solid #a225fc;
+}
+
+.tweet-btn {
+    background-color: #2575fc;
+    color: #fff;
+    padding: 0.7rem 1.3rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px #850c95;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+}
+
+.tweet-btn:hover {
+    background-color: #6a11cb;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowUp - Home</title>
+    <link rel="stylesheet" href="css/stylesHome.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <h1 class="title">ShowUp</h1>
+        <h1 class="desc">Welcome to the Talent Hub!</h1>
+        <button class="toggle-btn" onclick="toggleMode()">Mode</button>
+    </header>
+
+    <div class="homepage-container">
+        <h1>Bem-vindo, ngomezskkj!</h1>
+        <p class="welcome-text">Explore as oportunidades e conecte-se com talentos do mundo todo.</p>
+        <button class="explore-btn">Explorar</button>
+        <button class="profile-btn">Perfil</button>
+    </div>
+
+    <div class="tweets-container">
+        <h2>Tweets</h2>
+        <ul id="tweets-list">
+            <li class="tweet">🚀 ShowUp é o futuro do talento digital!</li>
+            <li class="tweet">🔥 Fique ligado nas novidades. #ShowUp</li>
+            <li class="tweet">🎭 Descubra, conecte-se e mostre seu talento!</li>
+        </ul>
+
+        <form id="tweet-form">
+            <input type="text" id="new-tweet" placeholder="O que está acontecendo?" maxlength="280" required>
+            <button type="submit" class="tweet-btn">Tweetar</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            const header = document.getElementById('main-header');
+            body.classList.toggle('dark-mode');
+            header.classList.toggle('dark-mode');
+        }
+
+        document.getElementById("tweet-form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Evita o reload padrão
+            const tweetInput = document.getElementById("new-tweet");
+            const tweetText = tweetInput.value.trim();
+
+            if (tweetText) {
+                const tweetList = document.getElementById("tweets-list");
+                const newTweet = document.createElement("li");
+                newTweet.classList.add("tweet");
+                newTweet.textContent = tweetText;
+
+                tweetList.insertBefore(newTweet, tweetList.firstChild);
+                tweetInput.value = ""; // Limpa o campo
+            }
+        });
+    </script>
+
+</body>
+</html>
